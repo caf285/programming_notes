@@ -24,10 +24,10 @@ func main() {
   )
   fmt.Println(factoredString, factoredInt)
 
-  // ONLY IN FUNCTION!!! initialized typless declaration can be shorthand
+  // ONLY IN FUNCTION!!! initialized typeless declaration can be 'short statement'
   // at the outer package level 'var', 'func', 'const', 'import' etc keywords are required
   // type is infered from value
-  c, d, e := "short", "hand", 8
+  c, d, e := "short", "statement", 8
   fmt.Println(c, d, e)
 
   // variables with no explicit value initialize at 0, false, or ""
