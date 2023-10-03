@@ -1,0 +1,17 @@
+.Nav {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.NavHeader {
+
+}
+
+.NavBody {
+  overflow-y: auto;
+}
+
+.NavFooter {
+
+}

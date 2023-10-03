@@ -1,14 +1,13 @@
-import './App.css';
-import Todo from './component/Todo.js';
+import Todo from './testing/Todo.js';
 
-function App() {
+function Examples() {
   const todos = [
     { id: 1, title: "wash dishes", completed: false, },
     { id: 2, title: "make dinner", completed: true, },
   ]
 
   return (
-    <div className="App">
+    <div>
       {
         todos.map((todo) => {
           return (<Todo todo={todo} />)
@@ -18,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default Examples;
