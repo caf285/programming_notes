@@ -1,13 +1,39 @@
+// react
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Nav from './nav/Nav.js';
 import reportWebVitals from './reportWebVitals';
 
+// top level theme and navigation
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/system';
+import Header from './navigation/Header.js';
+import Body from './navigation/Body.js';
+import Footer from './navigation/Footer.js';
+import styles from './navigation/Navigation.module.scss';
+
+// react root
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// mui root theme
+const theme = createTheme({
+  palette: {
+    background: {
+      main: '#333333',
+    },
+  },
+});
+
+// render
 root.render(
   <React.StrictMode>
-    <Nav />
+    <ThemeProvider theme={theme}>
+      <div className={styles.Navigation}>
+        <Header />
+        <Body />
+        <Footer />
+      </div>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

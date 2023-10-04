@@ -1,8 +1,8 @@
-import './Nav.css';
+import styles from './Navigation.module.scss';
 
 function Body() {
   return (
-    <div className="NavBody" style={{ display: "flex", flexGrow: 1 }}>
+    <div className={styles.NavigationBody}>
       <div style={{ height: "10000px" }}></div>
     </div>
   )

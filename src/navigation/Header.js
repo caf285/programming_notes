@@ -5,12 +5,12 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import './Nav.css';
+import styles from './Navigation.module.scss';
 
-function Footer() {
+function Header() {
   return (
-    <div className="NavFooter">
-      <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: 'background.main' }}>
+      <div className={styles.NavigationHeader}>
         <Toolbar>
           <IconButton
             size="large"
@@ -26,9 +26,9 @@ function Footer() {
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
-      </AppBar>
-    </div>
-  )
+      </div>
+    </AppBar>
+  );
 }
 
-export default Footer;
+export default Header;

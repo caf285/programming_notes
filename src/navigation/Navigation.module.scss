@@ -1,0 +1,22 @@
+.Navigation {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.NavigationHeader {
+}
+
+.NavigationBody {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.NavigationFooter {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
