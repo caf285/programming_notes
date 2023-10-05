@@ -1,5 +1,6 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
+import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
@@ -21,10 +22,13 @@ function Header() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
+          <Box>
+            <Button href="/" color="inherit">
+              <Typography variant="h6" component="div">
+                Home
+              </Typography>
+            </Button>
+          </Box>
         </Toolbar>
       </div>
     </AppBar>
