@@ -18,5 +18,12 @@ public class Main {
         Primitives.doubleWrapper();
         Primitives.charWrapper();
         Primitives.booleanWrapper();
+
+        /* 04. built in classes */
+        BuiltInClasses.string();
+
+        /* 05. operators, operands, and expressions */
+        OperatorsExpressions.arithmetic();
+        OperatorsExpressions.unary();
     }
 }
