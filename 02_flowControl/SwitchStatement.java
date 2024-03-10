@@ -77,7 +77,7 @@ public class SwitchStatement {
     }
 
     public static String enhancedGetQuarter(String month) {
-        /* larger default block requires "yield" keyword rather than "return" */
+        /* code blocks require "yield" keyword rather than "return" */
         return switch (month) {
             case "January", "Februrary", "March" -> "1st";
             case "April", "May", "June" -> "2nd";
