@@ -15,8 +15,8 @@ imap <ScrollWheelDown> <Down>
 set number
 
 " quick i/o for mouse and lines
-map <C-M><C-I> :set mouse=a<CR>:set number<CR>
-map <C-M><C-O> :set mouse=c<CR>:set nonumber<CR>
+nnoremap <C-M><C-I> :set mouse=a<CR>:set number<CR>
+nnoremap <C-M><C-O> :set mouse=c<CR>:set nonumber<CR>
 
 " set wrap for <,>,h,l,[,] keys
 set whichwrap+=<,>,h,l,[,]
@@ -51,3 +51,21 @@ hi MatchParen cterm=bold ctermfg=white ctermbg=red
 hi Todo cterm=bold ctermfg=white ctermbg=red
 hi CursorLine cterm=bold ctermbg=black ctermfg=NONE
 hi CursorColumn cterm=bold ctermbg=black ctermfg=NONE
+
+" =========================( Vundle )
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" plugins
+Plugin 'preservim/nerdtree'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" toggle plugins
+nnoremap <C-n> :NERDTreeToggle<CR>
