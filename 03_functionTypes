@@ -1,0 +1,17 @@
+// "inferred" type is a function
+let greetOne = () => {
+  console.log("hello world");
+};
+
+// "explicit" types may also be used
+let greetTwo: Function;
+greetTwo = () => {
+  console.log("hello again")
+};
+
+// "arguments" can be types
+let add = (x: number, y: number) => {
+  return x + y;
+};
+
+// "union" types may also be used as arguments
