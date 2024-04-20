@@ -53,6 +53,11 @@ hi CursorLine cterm=bold ctermbg=black ctermfg=NONE
 hi CursorColumn cterm=bold ctermbg=black ctermfg=NONE
 
 " =========================( Vundle )
+" -----( setup)
+" in bash, run `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+" in .vimrc (this file), run `:PluginInstall` 
+" /----( END setup)
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
